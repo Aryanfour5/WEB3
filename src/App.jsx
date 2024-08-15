@@ -27,11 +27,11 @@ function App() {
   async function fetchNFTs() {
     let res;
     if (cursor) {
-      res = await axios.get(`http://localhost:3000/allNft`, {
+      res = await axios.get(`https://web3-1-hua7.onrender.com/allNft`, {
         params: { address: address, chain: chain, cursor: cursor },
       });
     } else {
-      res = await axios.get(`http://localhost:3000/allNft`, {
+      res = await axios.get(`https://web3-1-hua7.onrender.com/allNft`, {
         params: { address: address, chain: chain },
       });
     }
